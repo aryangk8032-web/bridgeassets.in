@@ -1,0 +1,72 @@
+.logoCrop {
+  display: block;
+  width: 188px;
+  height: 86px;
+  overflow: hidden;
+  background: #fff;
+  padding: 0;
+}
+
+.logoImage {
+  display: block;
+  width: 198px !important;
+  max-width: none;
+  height: 198px;
+  object-fit: contain;
+  transform: translate(-5px, -52px);
+}
+
+@media (max-width: 850px) {
+  .logoCrop {
+    width: 155px;
+    height: 72px;
+  }
+
+  .logoImage {
+    width: 163px !important;
+    height: 163px;
+    transform: translate(-4px, -43px);
+  }
+}
+
+:global(.whatsapp-button) {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border-radius: 50%;
+  background: #25d366;
+  box-shadow: 0 12px 28px #07141159;
+  transition: transform .2s, background .2s;
+}
+
+:global(.whatsapp-button img) {
+  width: 29px;
+  height: 29px;
+  object-fit: contain;
+}
+
+:global(.whatsapp-button:hover) {
+  background: #48e180;
+  transform: translateY(-2px);
+}
+
+:global(.whatsapp-button:focus-visible) {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+@media (max-width: 850px) {
+  :global(.whatsapp-button) {
+    right: 16px;
+    bottom: 16px;
+    width: 56px;
+    height: 56px;
+  }
+}
