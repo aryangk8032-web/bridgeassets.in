@@ -1,0 +1,29 @@
+.logoCrop {
+  display: block;
+  width: 170px;
+  height: 70px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.logoImage {
+  display: block;
+  width: 170px !important;
+  max-width: none;
+  height: 170px;
+  object-fit: cover;
+  transform: translateY(-42px);
+}
+
+@media (max-width: 850px) {
+  .logoCrop {
+    width: 145px;
+    height: 60px;
+  }
+
+  .logoImage {
+    width: 145px !important;
+    height: 145px;
+    transform: translateY(-36px);
+  }
+}
