@@ -1,29 +1,30 @@
 .logoCrop {
   display: block;
-  width: 170px;
-  height: 70px;
+  width: 188px;
+  height: 86px;
   overflow: hidden;
   background: #fff;
+  padding: 0;
 }
 
 .logoImage {
   display: block;
-  width: 170px !important;
+  width: 198px !important;
   max-width: none;
-  height: 170px;
-  object-fit: cover;
-  transform: translateY(-42px);
+  height: 198px;
+  object-fit: contain;
+  transform: translate(-5px, -52px);
 }
 
 @media (max-width: 850px) {
   .logoCrop {
-    width: 145px;
-    height: 60px;
+    width: 155px;
+    height: 72px;
   }
 
   .logoImage {
-    width: 145px !important;
-    height: 145px;
-    transform: translateY(-36px);
+    width: 163px !important;
+    height: 163px;
+    transform: translate(-4px, -43px);
   }
 }
